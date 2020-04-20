@@ -8,9 +8,9 @@ If you want to create your own project, follow the steps bellow.
 - [NodeJS](https://nodejs.org/en/)
 - A Browser (Like [Google Chrome](https://www.google.com/intl/en-US/chrome/))
 
-After installing all softwares mentioned, setup your environment.
+After installing all softwares mentioned above, setup your environment.
 ## TypeScript setup
-Create a folder for your project and access it using the terminal/cmd from your computer.  
+Create a folder for your project and access it using the terminal or command prompt from your computer.  
 
 Type the following to create a `package.json` file:
 
@@ -18,7 +18,7 @@ Type the following to create a `package.json` file:
 npm init -y
 ```  
 
-Now, install `typescript` and `ts-node` globaly (for Windows systems, remove the `sudo` keyword):  
+Now, install `typescript` and `ts-node` globally (for Windows systems, remove the `sudo` keyword):  
 
 ```bash
 sudo npm i -g typescript
@@ -34,7 +34,7 @@ npm i eslint eslint-import-resolver-typescript -D
 If you choose to use Visual Studio Code, you should install the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).  
 
 ## ESLint and TypeScript configuration
-After the steps above, it's time to configure ESLint and TypeScript.  
+After following the steps above, it's time to configure ESLint and TypeScript.  
 
 Type the following:  
 
@@ -50,7 +50,7 @@ Now type:
 npx eslint --init
 ```  
 
-ESLint will ask some questions about your preferences. Here's the answers (use the keyboard arrows to choose):  
+ESLint will ask some questions about your preferences. Here's the answers (use the keyboard arrows and "Enter" to choose):  
 
 - To check syntax, find problems, and enforce code style;
 - JavaScript modules (import/export);
@@ -62,15 +62,15 @@ ESLint will ask some questions about your preferences. Here's the answers (use t
 - JavaScript;
 - Type "y" and hit "Enter";  
 
-This will create a file called `.eslint.js`. This file will change ESLint behavior. We'll need to change it for our purposes (see bellow).  
+This will create a file called `.eslintrc.js`. This file will change ESLint behavior. We'll need to change it for our purposes (see bellow).  
 
 ## Creating folders and changing configuration files  
 
-Now, create two folders, one called "src" and another called "dist". The src (source) folder is we're you'll add all your TypeScript files. The dist (distribution) folder, is we're you'll put all your other files, like HTML and CSS.
+Now, create two folders, one called "src" and another called "dist". The src (source) folder is we're you'll add all your TypeScript files. The "dist" (distribution) folder, is where you'll put all your other files, like HTML and CSS.
 
 We'll configure TypeScript to compile all files from "src" folder to "dist" folder keeping the same folder structure.
 
-If you are an experienced developer, you may use Webpack or some lib/framework that will do it automatically for you. I'm not going to talk about those here.
+If you are an experienced developer, you may use Webpack or some lib/framework that will do it automatically for you. I'm not going to talk about that here.
 
 Please, change `.eslintrc.js` file to the following:  
 
@@ -151,4 +151,4 @@ TypeScript can also watch for files you're changing and compile them automatical
 tsc -w
 ```  
 
-You'll see that this command won't finish, it'll keep watching files as you're changing than. This is a convenient way to work faster. To stop this commando, press 'CTRL+C' on your terminal.
+You'll see that this command won't finish, it'll keep watching files as you're changing than. This is a convenient way to work faster. To stop this command, press 'CTRL+C' on your terminal.
