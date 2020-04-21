@@ -111,7 +111,11 @@ module.exports = {
 };
 ```  
 
-And change `outDir` configuration in `tsconfig.json` from:
+## Compilation using the same folder structure  
+
+If you want TypeScript to transpile (compile) all your files using the same structure you wrote your them (folders and files), do the following.
+
+Change `outDir` configuration in `tsconfig.json` from:
 
 ```json
 // "outDir": "./",
@@ -121,7 +125,27 @@ to:
 
 ```json
 "outDir": "./dist",
+```  
+
+## Compilation using one big JS file    
+
+If you want TypeScript to transpile all your code into one big javascript file. Do the following:
+
+Change `outFile` and `module` configuration in `tsconfig.json` from:
+
+```json
+"module": "commonjs",
+// ... other lines
+// "outFile": "./",
 ```
+
+to:  
+
+```json
+"module": "amd",
+// ... other lines
+"outFile": "./dist/my_big_javascript_file.js",
+```  
 
 ## Hello world  
 
