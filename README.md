@@ -178,3 +178,9 @@ tsc -w
 ```  
 
 You'll see that this command won't finish, it'll keep watching files as you're changing than. This is a convenient way to work faster. To stop this command, press 'CTRL+C' on your terminal.
+
+You can also execute a file directly using `ts-node`:
+
+```
+ts-node src/file.ts
+```
