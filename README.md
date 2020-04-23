@@ -1,5 +1,5 @@
 # A simple project to start learning Typescript
-This is a simple project for people starting to learn TypeScript. Is already configured, so you can jump strait to leaning.  
+This is a simple project for people starting to learn TypeScript. It is already configured, so you can jump strait to leaning.  
 
 If you want to create your own project, follow the steps bellow.  
 
@@ -8,11 +8,12 @@ If you want to create your own project, follow the steps bellow.
 - [NodeJS](https://nodejs.org/en/)
 - A Browser (Like [Google Chrome](https://www.google.com/intl/en-US/chrome/))
 
-After installing all softwares mentioned above, setup your environment.
+After installing all softwares mentioned above, setup your environment.  
+
 ## TypeScript setup
 Create a folder for your project and access it using the terminal or command prompt from your computer.  
 
-Type the following to create a `package.json` file:
+Then type the following to create a `package.json` file:
 
 ```bash
 npm init -y
@@ -33,7 +34,8 @@ npm i eslint eslint-import-resolver-typescript -D
 
 If you choose to use Visual Studio Code, you should install the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).  
 
-## ESLint and TypeScript configuration
+## ESLint and TypeScript configuration  
+
 After following the steps above, it's time to configure ESLint and TypeScript.  
 
 Type the following:  
@@ -70,7 +72,7 @@ Now, create two folders, one called "src" and another called "dist". The src (so
 
 We'll configure TypeScript to compile all files from "src" folder to "dist" folder keeping the same folder structure.
 
-If you are an experienced developer, you may use Webpack or some lib/framework that will do it automatically for you. I'm not going to talk about that here.
+If you are an experienced developer, you may use Webpack or some bundler that will do it automatically for you. I'm not going to talk about that here.
 
 Please, change `.eslintrc.js` file to the following:  
 
@@ -113,7 +115,7 @@ module.exports = {
 
 ## Compilation using the same folder structure  
 
-If you want TypeScript to transpile (compile) all your files using the same structure you wrote your them (folders and files), do the following.
+If you want TypeScript to transpile (compile) all your files using the same structure you wrote them (folders and files), follow the the steps bellow.
 
 Change `outDir` configuration in `tsconfig.json` from:
 
