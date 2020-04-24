@@ -184,3 +184,5 @@ You can also execute a file directly using `ts-node`:
 ```
 ts-node src/file.ts
 ```
+
+That way your TypeScript file will be executed directly.
